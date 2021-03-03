@@ -1,5 +1,5 @@
 # PyYoutube2JD
-Python program that gets all the links in a youtube channel, and downloads them as audio
+Python program that gets all the links in a youtube channel, and downloads them as audio. It uses [MyJDownloader API](https://github.com/mmarquezs/My.Jdownloader-API-Python-Library) for python
 
 Currently you have to download the .py file and edit some variables with your data (myjd user, password, downloads directory,etc), see code comments for more details.
 
