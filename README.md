@@ -22,11 +22,11 @@ Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of[JDownloader](https://jdownloader.org/).
 * [MyJDownloader API](https://github.com/mmarquezs/My.Jdownloader-API-Python-Library) for python.
 ```
-  pip install myjdapi
+      pip install myjdapi
 ```
 * [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
  ```
-  pip install pyautogui
+      pip install pyautogui
  ```
 * Python 3 or higher.
 
@@ -38,6 +38,7 @@ To install PyYoutube2JD, follow these steps:
 * Go to MyJDownloader > Setup & Login
 * Make sure you have got an account (if not create a new one following the instructions at MyJDownloader.org)
 * Complete the text boxes with your email, password, and device name (you will need this data later).
+* Click on "Connect" button.
 * Download PyYoutube2JD.py and open with your edit IDLE to configure and execute it.
 
 ## Using PyYoutube2JD.py
@@ -77,37 +78,20 @@ def Obtenerlinks(url,youtuber):
                       }])
 
 ```
-
-
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
-
-## Contributing to <project_name>
-<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
-To contribute to <project_name>, follow these steps:
-
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
-
-Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-* [@scottydocs](https://github.com/scottydocs) 📖
-* [@cainwatson](https://github.com/cainwatson) 🐛
-* [@calchuchesta](https://github.com/calchuchesta) 🐛
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
+* Call this function as many times as you need (once per youtube account/playlist)
+```python
+#Start collecting links from this 3 Youtube accounts
+Obtenerlinks('https://www.youtube.com/c/CiudadanoZ1984/videos','Ciudadano Z')
+Obtenerlinks('https://www.youtube.com/c/mercurialdark1097/videos','Mercurialdark 10')
+Obtenerlinks('https://www.youtube.com/c/ElViajeDelHorror/videos','DarkSoulHorror')
+```
+* It will collect all the links and start downloading them as audio. It will not try to download videos you already have downloaded, so you can use the same code to download only new videos from the same accounts/playlists.
+* You can convert them to mp3 (or other formats) with JD build-in scripts (see link: https://board.jdownloader.org/showthread.php?t=70525)
 
 ## Contact
 
-If you want to contact me you can reach me at <your_email@address.com>.
+If you want to contact me you can reach me at Mariano_Desivo@hotmail.com.
 
 ## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: MIT License.
