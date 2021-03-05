@@ -85,7 +85,8 @@ Obtenerlinks('https://www.youtube.com/c/CiudadanoZ1984/videos','Ciudadano Z')
 Obtenerlinks('https://www.youtube.com/c/mercurialdark1097/videos','Mercurialdark 10')
 Obtenerlinks('https://www.youtube.com/c/ElViajeDelHorror/videos','DarkSoulHorror')
 ```
-* It will collect all the links and start downloading them as audio. It will not try to download videos you already have downloaded, so you can use the same code to download only new videos from the same accounts/playlists.
+* Compile and run the code.
+* It will collect all the links and start downloading them as audio files. It will not try to download videos you already have downloaded, so you can use the same code to download only new videos from the same accounts/playlists.
 * You can convert them to mp3 (or other formats) with JD build-in scripts (see link: https://board.jdownloader.org/showthread.php?t=70525)
 
 ## Contact
